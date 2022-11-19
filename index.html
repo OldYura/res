@@ -7,27 +7,36 @@
     <meta name="keywords" content="юрий рагозин, разработка, создание сайтов, frontend, backend, php, javascript">
     <meta name="description" content="Если вам нужен современный рабочий сайт - я их делаю. Смотрите портфолио, пишите вопросы - обсудим, что за сайт вы хотите получить.">
     <title>Разработчик сайтов Юрий Рагозин</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="pics/old.jpg" width="200" alt="Юрий Рагозин">
-    <h1>Юрий Рагозин</h1>
-    <p>Рублю <strong>сайты</strong>. Занимаюсь <strong>боевыми искусствами</strong>. Изучаю <strong>секты</strong>.</p>
-    <p><em>Люблю высыпаться, быть здоровым, учиться новому, понимать всякое.</em></p>
-    <p><strong>Меня можно найти тут:</strong></p>
-    <p><a href="https://vk.com/oldyura" target="_blank" title="">Вконтакте</a> | <a href="https://t.me/oldyura" target="_blank" title="">Telegram</a></p>
+<div id="container">
+    <div class="myblock">
+        <img src="pics/old.jpg" alt="Юрий Рагозин">
+        <div>
+            <h1>Юрий Рагозин</h1>
+            <p>Рублю <strong>сайты</strong>. Занимаюсь <strong>боевыми искусствами</strong>. Изучаю <strong>секты</strong>.</p>
+            <p><em>Люблю высыпаться, быть здоровым, учиться новому, понимать всякое.</em></p>
+            <p><strong>Меня можно найти тут:</strong></p>
+            <p><a href="https://vk.com/oldyura" target="_blank" title="">Вконтакте</a> | <a href="https://t.me/oldyura" target="_blank" title="">Telegram</a></p>
+        </div>
+    </div>
     <hr>
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Слушать тишину</li>
-        <li>Играть в молчанку</li>
-        <li>Отрубать иллюзии</li>
-        <li>Пребывать в ясности</li>
-        <li>Делать правильное</li>
-    </ol>
+    <div class="myblock">
+        <h2>Мои хобби</h2>
+        <ol>
+            <li>Слушать тишину</li>
+            <li>Играть в молчанку</li>
+            <li>Отрубать иллюзии</li>
+            <li>Пребывать в ясности</li>
+            <li>Делать правильное</li>
+        </ol>
+    </div>
     <hr>
-    <h2></h2>
-    <Table>
-        <thead>
+    <div class="myblock">
+        <h2>Некоторая занятость</h2>
+        <table>
+            <thead>
             <tr>
                 <th>
                     Организация
@@ -39,8 +48,8 @@
                     Период
                 </th>
             </tr>
-        </thead>
-        <tbody>
+            </thead>
+            <tbody>
             <tr>
                 <td>
                     ПО "Север"
@@ -48,8 +57,19 @@
                 <td>
                     оператор ЭВМ
                 </td>
-                <td>
+                <td class="years">
                     1990-1992
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ООО "РТК"
+                </td>
+                <td>
+                    системный администратор
+                </td>
+                <td class="years">
+                    2000-2005
                 </td>
             </tr>
             <tr>
@@ -59,7 +79,7 @@
                 <td>
                     инженер-программист
                 </td>
-                <td>
+                <td class="years">
                     2005-2009
                 </td>
             </tr>
@@ -70,20 +90,24 @@
                 <td>
                     инженер-программист
                 </td>
-                <td>
+                <td class="years">
                     2009-2011
                 </td>
             </tr>
-        </tbody>
-    </Table>
+            </tbody>
+        </table>
+    </div>
     <hr>
-    <h2>Связаться со мной</h2>
-    <form action="">
-        <label for="name">Ваше имя:</label>  <input type="text" placeholder="Введите имя" name="name"><br>
-        <label for="email">Ваш email:</label> <input type="email" placeholder="Введите email" name="email"><br>
-        <label for="message">Ваше сообщение:</label><br>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Введите сообщение..."></textarea><br>
-        <input type="submit" name="sendme" value="Отправить!">        
-    </form>
+    <div class="myblock">
+        <h2>Связаться со мной</h2>
+        <form action="">
+            <div class="form-line"><label for="name">Ваше имя:</label> <input type="text" placeholder="Введите имя" name="name" id="name"></div>
+            <div class="form-line"><label for="email">Ваш email:</label> <input type="email" placeholder="Введите email" name="email" id="email"></div>
+            <label for="message">Ваше сообщение:</label><br>
+            <textarea name="message" id="message" rows="10" placeholder="Введите сообщение..."></textarea><br>
+            <input type="submit" name="sendme" value="Отправить!" id="button" title="НАЖМИ МЕНЯ!!1">
+        </form>
+    </div>
+</div>
 </body>
 </html>
