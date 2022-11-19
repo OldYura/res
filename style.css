@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body {
+    font-family: Comfortaa, san-serif;
+    font-size: 15px;
+    background-color: #efdbbd;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 8px;
+    background-color: #eee;
+    border: 1px solid #bbb;
+}
+
+tr:nth-child(even) td {
+    background-color: #ccc;
+}
+
+tr:hover td {
+    background-color: #000;
+    color: #fff;
+}
+
+th {
+    background-color: #444;
+    padding: 8px;
+    color: blanchedalmond;
+    border: 1px solid #000;
+}
+
+form * {
+    margin: 8px;
+    font-size: 13px;
+}
+
+textarea {
+    width: 558px;
+}
+
+li {
+    font-style: italic;
+    line-height: 1.5;
+}
+
+p {
+    color: #444;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+#button {
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 10px 10px -10px #444;
+}
+
+#button:hover {
+    box-shadow: 0 10px 20px -10px #222;
+    background-color: red;
+}
+
+hr {
+    margin: -30px auto 30px;
+	padding: 0;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 0 20px 20px -20px #888;
+	width: 480px;
+}
+
+.myblock {
+    border: 1px solid #ccc;
+    margin: auto;
+    padding: 20px;
+    border-radius: 40px;
+    background-color: blanchedalmond;
+    width: 580px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.myblock:last-of-type {
+    margin-bottom: 40px;
+}
+
+.years {
+    text-align: center;
+}
+
+#container {
+    width:620px;
+    align: center;
+    margin: auto;
+}
+
+a {
+    color: blue;
+}
+
+a:active {
+    color: navy;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+}
+
+.form-line {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline;
+    width: 50%;
+}
+
+.form-line label {
+    margin: 0;
+}
+
+.form-line:last-of-type {
+    text-align: right;
+}
+
+.myblock:first-of-type {
+    display:flex
+}
+
+.myblock:first-of-type div {
+    margin-left: 20px;
+}
+
+img {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px -20px #444;
+    width: 200px;
+    height: 200px;
+}
+
+input:focus, textarea:focus {
+    background-color: #dfd;
+}
+
+@media (max-width: 650px) {
+    #container {
+        width: 600px;
+    }
+
+    hr {
+        width: 80%;
+    }
+
+    .form-line {
+        display:block;
+        width: 100%;
+    }
+
+    textarea {
+        width: 90%;
+    }
+
+    .form-line:last-of-type {
+        text-align: left;
+    }
+
+    table * {
+        font-size: 12px;
+    }
+
+    .myblock {
+        width: 90%;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+}
